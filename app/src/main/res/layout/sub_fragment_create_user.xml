@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USER NAME"
+                style="@style/change_password_label"
+                android:id="@+id/tvUserName1"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/change_password_edittext"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textColor="@color/RedDark"
+                android:gravity="center"
+                android:id="@+id/et_name"
+
+                android:background="@drawable/create_user_textbox"
+
+
+                />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:id="@+id/tv_Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_label"
+                android:text="PASSWORD"></TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_edittext"
+                android:textColor="@color/RedDark"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:id="@+id/et_pass"
+                android:background="@drawable/create_user_textbox"
+
+
+                />
+            </TableRow>
+
+
+        <TableRow android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/textView132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_label"
+                android:text="ACCESS"
+                />
+            <GridView
+                android:id="@+id/gv_Camera_listData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:scrollbars="none"
+                />
+        </TableRow>
+</TableLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:gravity="right">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_save"
+                android:textSize="6pt"
+                android:layout_marginRight="20dp"
+                android:text="SAVE"
+
+
+                android:background="@drawable/admin_button_save"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_usercancel"
+                android:textSize="6pt"
+                android:text="CANCEL"
+
+                android:background="@drawable/admin_button_save"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

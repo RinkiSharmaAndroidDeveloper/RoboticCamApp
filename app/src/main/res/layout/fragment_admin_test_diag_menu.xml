@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        style="@style/user_section_screen_section_layout_top_bar"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="8pt"
+            android:id="@+id/tv_test_diagnostic"
+            android:layout_marginLeft="30dp"
+            android:text="@string/test_diagnostic_menu"
+            android:textColor="@color/white"
+            style="@style/user_memory_presets_screen_toggle_textview"
+
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_last_login"
+            android:textSize="6pt"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:text="Last login as(Administrator): hh:mm:ss | xx/xx/20xx"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bottom_seperator"
+        android:id="@+id/daig_seperate"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.2"
+        android:id="@+id/lin4"
+
+
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:id="@+id/lin5"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:id="@+id/daig_layout"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PAN TILT"
+                    style="@style/user_control_screen_mode_buttons"
+                    android:id="@+id/btn_pan_tilt"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_lens"
+                    android:text="LENS"
+                    style="@style/user_control_screen_mode_buttons"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_elevation"
+                    android:text="ELEVATION"
+
+                    style="@style/user_control_screen_mode_buttons"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_predesta"
+                    android:text="PEDESTAL"
+
+                    style="@style/user_control_screen_mode_buttons"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <GridView
+                    android:id="@+id/gv_Camera_list"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:numColumns="6"
+                    style="@style/user_control_screen_gridview_camera1"
+                    android:layout_weight="0.89" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.8"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_daignose"
+                    android:text="DIAGNOSE"
+                    android:background="@drawable/daig_pressed_button"
+                    style="@style/user_control_screen_mode_buttons"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_reset"
+                    android:text="RESET"
+                    android:background="@drawable/daig_unpressed_button"
+                    style="@style/user_control_screen_mode_buttons"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1"
+
+            android:background="@drawable/diagnocis_menu"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Status :"
+                style="@style/user_logout_textView"
+                android:id="@+id/tvstatus"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error :"
+
+                style="@style/user_logout_textView"
+                android:id="@+id/tv_error1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                style="@style/user_logout_textView"
+                android:id="@+id/tv_error2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error :"
+
+                style="@style/user_logout_textView"
+                android:id="@+id/tv_error3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                style="@style/user_logout_textView"
+                android:id="@+id/tv_error4"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Error :"
+
+                style="@style/user_logout_textView"
+                android:id="@+id/tv_error5"
+                />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

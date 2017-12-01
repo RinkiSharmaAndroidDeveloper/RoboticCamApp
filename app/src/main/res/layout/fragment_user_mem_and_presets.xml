@@ -1,0 +1,409 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        style="@style/user_section_screen_section_layout_top_bar"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/memory_preset_head"
+            android:text="MEMORY PRESETS"
+            style="@style/user_memory_presets_screen_toggle_textview"
+
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_panel_lock"
+            android:text="@string/panel_lock"
+            style="@style/user_memory_presets_screen_toggle_textview"
+
+            />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn=""
+            android:textOff=""
+            android:id="@+id/btnPanelLock"
+            android:textColor="@color/RedDefault"
+            android:background="@drawable/button_toggle_image"
+            android:drawableLeft="@drawable/on_off_button"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seprator"
+        android:id="@+id/seperate"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+
+            >
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+               >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please select camera from control screen"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:textColor="@color/RedDefault"
+                android:layout_span="4"
+                android:id="@+id/tvErrorMessageForSelectCamera"
+                />
+            </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+               >
+                <TextView
+                    android:text="1"
+                    android:id="@+id/tvnumber1"
+                    android:background="@drawable/preset_unpressed"
+                    style="@style/presetbutton"
+                    />
+                <TextView
+                    android:text="2"
+                    android:id="@+id/tvnumber2"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="3"
+                    android:id="@+id/tvnumber3"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+                <TextView
+                    android:text="4"
+                    android:id="@+id/tvnumber4"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="5"
+                    android:id="@+id/tvnumber5"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+                </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+
+                >
+                <TextView
+                    android:text="6"
+                    android:id="@+id/tvnumber6"
+                    android:background="@drawable/preset_unpressed"
+                    style="@style/presetbutton"
+                    />
+                <TextView
+                    android:text="7"
+                    android:id="@+id/tvnumber7"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="8"
+                    android:id="@+id/tvnumber8"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+                <TextView
+                    android:text="9"
+                    android:id="@+id/tvnumber9"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="10"
+                    android:id="@+id/tvnumber10"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <TextView
+                    android:text="11"
+                    android:id="@+id/tvnumber11"
+                    android:background="@drawable/preset_unpressed"
+                    style="@style/presetbutton"
+                    />
+                <TextView
+                    android:text="12"
+                    android:id="@+id/tvnumber12"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="13"
+                    android:id="@+id/tvnumber13"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+                <TextView
+                    android:text="14"
+                    android:id="@+id/tvnumber14"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="15"
+                    android:id="@+id/tvnumber15"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+
+
+            </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+               >
+                <TextView
+                    android:text="16"
+                    android:id="@+id/tvnumber16"
+                    android:background="@drawable/preset_unpressed"
+                    style="@style/presetbutton"
+                    />
+                <TextView
+                    android:text="17"
+                    android:id="@+id/tvnumber17"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="18"
+                    android:id="@+id/tvnumber18"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+                <TextView
+                    android:text="19"
+                    android:id="@+id/tvnumber19"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="20"
+                    android:id="@+id/tvnumber20"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+               >
+                <TextView
+                    android:text="21"
+                    android:id="@+id/tvnumber21"
+                    android:background="@drawable/preset_unpressed"
+                    style="@style/presetbutton"
+                    />
+                <TextView
+                    android:text="22"
+                    android:id="@+id/tvnumber22"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="23"
+                    android:id="@+id/tvnumber23"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+                <TextView
+                    android:text="24"
+                    android:id="@+id/tvnumber24"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="25"
+                    android:id="@+id/tvnumber25"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:text="26"
+                    android:id="@+id/tvnumber26"
+                    android:background="@drawable/preset_unpressed"
+                    style="@style/presetbutton"
+                    />
+                <TextView
+                    android:text="27"
+                    android:id="@+id/tvnumber27"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="28"
+                    android:id="@+id/tvnumber28"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+                <TextView
+                    android:text="29"
+                    android:id="@+id/tvnumber29"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+                <TextView
+                    android:text="30"
+                    android:id="@+id/tvnumber30"
+                    style="@style/presetbutton"
+                    android:background="@drawable/preset_unpressed"
+                    />
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+        </ScrollView>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        style="@style/user_memory_presets_screen_footer_layout"
+        android:orientation="horizontal" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Multiple_Select"
+            android:id="@+id/btnMultipleSelect"
+            style="@style/user_control_screen_mode_buttons"
+            android:background="@drawable/mode_button_unpressed"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Save"
+            android:id="@+id/btnSave"
+            style="@style/user_control_screen_mode_buttons"
+            android:background="@drawable/mode_button_unpressed"
+            android:layout_gravity="center_horizontal"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EXECUTE"
+            android:id="@+id/btnExcute"
+            style="@style/user_control_screen_mode_buttons"
+            android:background="@drawable/mode_button_unpressed"
+            android:layout_gravity="center_horizontal"
+           />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/user_memory_presets_screen_symbol_add"
+            android:src="@drawable/decress_symbol"
+            android:id="@+id/Imageadd"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <com.emtcontrols.cam.widget.CustomSeekBar
+            android:progress="50"
+            style="@style/user_control_screen_seekbar_sensitivity"
+            android:progressDrawable="@drawable/progress_bar_color"
+            android:thumb="@drawable/small_thumb"
+            android:id="@+id/sb_time_scale"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Time Scale"
+            android:id="@+id/tvTimeScale"
+            android:textSize="6pt"
+            android:textColor="@color/RedTextView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+           />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/incress_symbol"
+            style="@style/user_memory_presets_screen_symbol_sub"
+            android:id="@+id/Imagesub"
+            />
+
+    </LinearLayout>
+</LinearLayout>

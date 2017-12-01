@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_camerano"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+
+        android:textSize="6pt"
+        />
+
+    <TextView
+        android:id="@+id/tv_cameraname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:background="@drawable/cell_space"
+
+        android:textSize="6pt"
+        />
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+
+        android:textSize="6pt"
+        />
+
+</LinearLayout>

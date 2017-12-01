@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        style="@style/user_section_screen_section_layout_top_bar"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/auto_focus"
+            android:text="OPTION MENU"
+            style="@style/user_memory_presets_screen_toggle_textview"
+
+            android:layout_weight="1"
+            />
+    <!--    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/panel_lock1"
+            android:text="@string/panel_lock"
+            style="@style/user_memory_presets_screen_toggle_textview"
+
+            />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn=""
+            android:textOff=""
+            android:id="@+id/panel_lock"
+            android:textColor="@color/RedDefault"
+            android:background="@drawable/button_toggle_image"
+            android:drawableRight="@drawable/on_off_button"
+            android:layout_gravity="right"
+            />-->
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/seprator"
+        android:id="@+id/seperate"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.2"
+        android:id="@+id/lin4"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1"
+            android:id="@+id/lin5"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/llPassword"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    style="@style/textViewOptionsMenu"
+                    android:text="USER DEATILS"
+                    android:drawableRight="@drawable/tab_user_detail_icon"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/tvPassword"/>
+            </LinearLayout>
+            <View
+                android:id="@+id/v1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#595959" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/llBackgroundcolor"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/textViewOptionsMenu"
+                    android:drawableRight="@drawable/tab_background_icon"
+                    android:text="BACKGROUND COLOR"
+                    android:id="@+id/tvBackgroundcolor"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#595959" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/llBrightness"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:drawableRight="@drawable/tab_icon_brightness_active"
+                    style="@style/textViewOptionsMenu"
+                    android:text="BRIGHTNESS"
+                    android:id="@+id/tvBrightness"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#595959" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/llTextsize"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/textViewOptionsMenu"
+                    android:drawableRight="@drawable/tab_icon_text_size_active"
+                    android:text="TEXT SIZE"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tvTextsize"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#595959" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/llCameralayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/textViewOptionsMenu"
+                    android:drawableRight="@drawable/tab_icon_camera_layouts_inactive"
+                    android:text="CAMERA LAYOUT"
+                    android:id="@+id/tvCameralayout"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#595959" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1"
+            android:orientation="vertical"
+            android:background="#595959"
+           >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/user_option_menu"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+    <!--
+    &lt;!&ndash;<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="RCP Control Menu Last login as (User): hh:mm:ss xx/xx/20xx"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="337dp"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="USER NAME"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tvUserName"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="PASSWORD"
+                    android:id="@+id/tvPassword"/>
+
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="BRIGHTNESS"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textView4"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginTop="10dp"
+                    android:text="BACKGROUND COLOR"
+                    android:id="@+id/textView3"/>
+    &lt;!&ndash;
+            <RelativeLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">&ndash;&gt;
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="TEXT SIZE"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/textView5"/>
+
+                &lt;!&ndash;<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CHANGE"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/button" />&ndash;&gt;
+
+           &lt;!&ndash; </RelativeLayout>&ndash;&gt;
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="CAMERA LAYOUT"
+                    android:id="@+id/textView6"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/user_option_menu"
+                    android:layout_weight="2">
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>&ndash;&gt;
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+        android:id="@+id/mainlayout"
+    android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvHeding"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:drawableLeft="@drawable/setting"
+            android:text="@string/setting"
+            android:layout_gravity="center"
+           />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/tvView"
+            android:layout_below="@+id/tvHeding"
+            android:background="#0781AC" />
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvView"
+        android:layout_toLeftOf="@+id/secondView"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textViewOptionsMenu"
+            android:text="USER DEATILS"
+            android:id="@+id/tvPassword"/>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="#595959" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBrightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textViewOptionsMenu"
+            android:text="BRIGHTNESS"
+            android:id="@+id/tvBrightness"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#595959" />
+       </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llBackgroundcolor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textViewOptionsMenu"
+            android:text="BACKGROUND COLOR"
+
+            android:id="@+id/tvBackgroundcolor"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="#595959" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llTextsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textViewOptionsMenu"
+            android:text="TEXT SIZE"
+            android:layout_centerVertical="true"
+            android:id="@+id/tvTextsize"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="#595959" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llCameralayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textViewOptionsMenu"
+            android:text="CAMERA LAYOUT"
+            android:id="@+id/tvCameralayout"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="#595959" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <View
+            android:id="@+id/secondView"
+            android:layout_width="0dp"
+            android:layout_below="@+id/tvView"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvView"
+        android:layout_toRightOf="@+id/secondView"
+        android:background="#212121"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/user_option_menu"
+            android:layout_weight="2">
+        </FrameLayout>
+
+    </LinearLayout>
+    </RelativeLayout>-->
+

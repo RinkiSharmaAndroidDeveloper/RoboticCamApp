@@ -1,0 +1,317 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        style="@style/user_section_screen_section_layout_top_bar"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="8pt"
+            android:id="@+id/maintanance_conf_menu_new"
+            android:layout_marginLeft="30dp"
+            android:text="@string/maintanance_conf_menu"
+            android:textColor="@color/white"
+            style="@style/user_memory_presets_screen_toggle_textview"
+
+            android:layout_weight="1"
+            />
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_message"
+                android:textSize="6pt"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:text="Last login as(Administrator): hh:mm:ss | xx/xx/20xx"
+                />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/admin_horizontal_sep"
+        android:id="@+id/seperate"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.2"
+        android:id="@+id/lin4"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1"
+            android:id="@+id/lin5"
+            android:background="@drawable/background_admin_sub_menu"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="483dp"
+                android:layout_height="70dp"
+                android:id="@+id/ll_settins"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/textViewOptionsMenu"
+                    android:textSize="8pt"
+                    android:text="SETTINGS"
+                    android:id="@+id/tv_settins"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/v1"
+                android:layout_width="483dp"
+                android:layout_height="1dp"
+                android:background="@drawable/admin_sub_menu_horizontal_sep" />
+            <LinearLayout
+                android:layout_width="483dp"
+                android:layout_height="70dp"
+                android:id="@+id/ll_manage_user"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/textViewOptionsMenu"
+                    android:text="MANAGE USER"
+                    android:textSize="8pt"
+                    android:id="@+id/tv_manage_user"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/v2"
+                android:layout_width="483dp"
+                android:layout_height="1dp"
+                android:background="@drawable/admin_sub_menu_horizontal_sep" />
+            <LinearLayout
+                android:layout_width="483dp"
+                android:layout_height="70dp"
+                android:id="@+id/ll_managecamera"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/textViewOptionsMenu"
+                    android:text="MANAGE CAMERA"
+                    android:textSize="8pt"
+                    android:id="@+id/tv_managecamera"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/v7"
+                android:layout_width="483dp"
+                android:layout_height="1dp"
+                android:background="@drawable/admin_sub_menu_horizontal_sep" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.1"
+            android:orientation="vertical"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/camera_create_menu_frame"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+<!--
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Meintanance &amp; Configuration Menu"
+            android:id="@+id/textView109"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Last login as (Administrator): hh:mm:ss xx/xx/20xx"
+            android:id="@+id/textView110"
+            android:layout_marginLeft="10dp"/>
+     &lt;!&ndash;   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Details"
+            android:id="@+id/textView111"
+            android:layout_gravity="center_horizontal"
+            />&ndash;&gt;
+    </LinearLayout>
+   &lt;!&ndash; <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Details"
+            android:id="@+id/textView111"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>&ndash;&gt;
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="4">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Screen Cal."
+                        android:id="@+id/button12"
+
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Double Push ON/OFF"
+                        android:id="@+id/button14"
+
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Joystick Cal."
+
+                        android:id="@+id/button15"
+                        android:layout_gravity="center"/>
+
+
+                    </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Joystick Pref."
+                        android:id="@+id/button16"
+
+                        android:layout_gravity="center"/>
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Shot Time ON/OFF"
+                        android:id="@+id/button17"
+                        android:layout_gravity="center"
+
+                         />
+
+
+
+
+                    <Button
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:text="Manage Camera"
+                        android:id="@+id/btncam1"
+                        android:background="@drawable/button_unpressed"
+
+                        android:layout_gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Zoom Cal."
+
+                        android:id="@+id/button18"
+                        android:layout_gravity="center"/>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Focus Cal."
+
+                        android:id="@+id/button19"
+                        android:layout_gravity="center"/>
+
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Manage Camera"
+                        android:id="@+id/btncam1"
+                        android:layout_gravity="center"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:id="@+id/camera_create_menu_frame"
+            android:layout_weight="3">
+
+
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/camera_create_menu_frame"
+            android:layout_weight="2">
+
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+-->

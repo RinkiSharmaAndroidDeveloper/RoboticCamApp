@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    style="@style/user_login_screen_errormessage_textview"
+                    android:id="@+id/usernameerror"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/USER_LOGIN"
+                    android:id="@+id/txtUserLogin"
+                   style="@style/user_login_screen_userlogin_textview"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_seprator"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/InLogin"
+                    android:singleLine="true"
+                    android:layout_centerHorizontal="true"
+                    android:hint="USER NAME"
+                    android:background="@drawable/user_name_pass_bar"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/user_login_screen_username_textview"
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/InPassword"
+                    android:singleLine="true"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textPassword"
+                    android:hint="PASSWORD"
+                    android:background="@drawable/user_name_pass_bar"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/user_login_screen_password_textview"
+
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/BtnLogIn"
+                    android:text="@string/login"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/user_login_screen_login_button"
+                    android:background="@drawable/login_button"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Remember_me"
+                    android:id="@+id/cbremember"
+                    style="@style/user_login_screen_rememberme_checkbox"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/user_login_screen_forgetpassword_textview"
+                    android:id="@+id/Forgot_password"
+                    android:text="@string/forgetpassword"
+                   />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_seprator"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/InPassword"
+                    android:layout_toRightOf="@+id/cbremember"
+                    style="@style/user_login_screen_exit_button"
+                    android:id="@+id/BtnExit"
+                    android:text="@string/exit"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:orientation="vertical"></LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+

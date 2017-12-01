@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cam</string>
+    <string name="setting">Settings</string>
+    <string name="control_screen">CONTROL SCREEN</string>
+    <string name="memory_and_presets">MEMORY PRESETS</string>
+    <string name="information_menu">INFORMATION MENU</string>
+    <string name="options_menu">OPTIONS MENU</string>
+    <string name="logout">LOGOUT</string>
+
+
+    <string name="maintanance_conf_menu">MAINTENANCE \u0026 CONFIG </string>
+    <string name="user_create_menu">CREATE USER</string>
+    <string name="rcp_control_menu">RCP CONTROL</string>
+    <string name="test_diagnostic_menu">TEST \u0026 DIAGNOSTIC </string>
+
+
+    <!-- Text view -->
+    <string name="member_login">User Login</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+
+    <!-- preliminary strings -->
+    <string name="last_login">Last login as (User): hh:mm:ss xx/xx/20xx</string>
+
+
+    <!-- Button text -->
+    <string name="touch_to_continue">You Loged in as Superuser \u0085 Touch to Continue</string>
+    <string name="save">Save</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="message_delete_user">Are you sure you want delete the selected user?</string>
+
+    <string name="spinner_title">Colors</string>
+
+
+    <!--UI text for custom control-->
+    <string name="auto_focucs">AUTO FOCUS</string>
+    <string name="panel_lock">PANEL LOCK</string>
+    <string name="focus">FOCUS</string>
+    <string name="camera_control">CAMERA \nCONTROL</string>
+    <string name="elevation_control">ELEVATION \nCONTROL</string>
+    <string name="predestal_control">PEDESTAL \nCONTROL</string>
+    <string name="MODE">MODE</string>
+    <string name="JOYSTICK">JOYSTICK</string>
+    <string name="SENSTIVITY">SENSTIVITY</string>
+    <string name="CAMERALIST">CAMERA LIST</string>
+
+    <!--UI for Login Screen-->
+    <string name="USER_LOGIN">USER LOGIN</string>
+    <string name="Remember_me">Remember me</string>
+    <string name="forgetpassword">Forgot my password</string>
+    <string name="exit">EXIT</string>
+
+    <string name="User_name"> USER NAME  :</string>
+    <string name="Login_date">LOGIN DATE :</string>
+    <string name="Login_time">LOGIN TIME :</string>
+    <string name="Last_login">LAST LOGIN :</string>
+
+    <string name="USERLOGOUT">USER LOGOUT</string>
+    <string name="LOGOUT">LOGOUT</string>
+
+
+    <!--Memory and presets screen -->
+    <string name="Multiple_Select"> MULITPLE \nSELECT</string>
+    <string name="Save">SAVE</string>
+    <string name="EXECUTE">EXECUTE</string>
+</resources>

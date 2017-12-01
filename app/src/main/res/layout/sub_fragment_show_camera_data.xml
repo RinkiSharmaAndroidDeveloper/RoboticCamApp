@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+       >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.4">
+
+
+            <Button
+                android:layout_width="82dp"
+                android:layout_height="72dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="6pt"
+                android:text="ADD CAMERA"
+                android:background="@drawable/maintance_button_unpressed"
+                android:id="@+id/btn_create_camera"/>
+            <Button
+                android:layout_width="82dp"
+                android:layout_height="72dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="6pt"
+                android:text="EDIT"
+                android:background="@drawable/maintance_button_unpressed"
+                android:id="@+id/btn_camera_edit"/>
+
+            <Button
+                android:layout_width="82dp"
+                android:layout_height="72dp"
+                android:textSize="6pt"
+                android:text="DELETE"
+                android:background="@drawable/maintance_button_unpressed"
+                android:id="@+id/btn_camera_delete"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.6">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/header_tv_id"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:text="NO"
+                    android:textSize="7pt"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/header_tv_username"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/cell_space"
+                    android:text="CAMERA NANE"
+                    android:textSize="7pt"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/header_tv_password"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:text="URL"
+                    android:textSize="7pt"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/v2"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:background="@drawable/admin_sub_menu_horizontal_sep" />
+            <ListView
+                android:layout_width="400dp"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:divider="@color/white"
+                android:id="@+id/lv_Camera_list"/>
+            <ImageView
+                android:id="@+id/v1"
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:background="@drawable/admin_sub_menu_horizontal_sep" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

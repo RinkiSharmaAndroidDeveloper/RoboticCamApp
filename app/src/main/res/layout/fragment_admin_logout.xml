@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USER LOGOUT"
+                android:id="@+id/txtUserLogin"
+                style="@style/superuser_user_login_screen_userlogin_textview"
+                android:layout_gravity="center_horizontal"
+
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_logout_seperator_line"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logout"
+                android:text="LOGOUT"
+                android:layout_gravity="center_horizontal"
+                style="@style/superuser_user_login_screen_login_button"
+                android:background="@drawable/login_logout_button"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_logout_seperator_line"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/InPassword"
+                android:layout_toRightOf="@+id/cbremember"
+                style="@style/superuser_user_login_screen_exit_button"
+                android:id="@+id/logs"
+                android:text="LOGS"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:visibility="invisible"
+            android:background="@drawable/admin_logout_logs_trans"
+            android:id="@+id/invisible_layout"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_log"
+                android:background="@drawable/logout_log_close"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_logs"
+                android:text="USER LOGS"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_logout_seperator_line"
+                android:layout_marginLeft="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="You are loged on as "
+                style="@style/user_logout_textView"
+                android:id="@+id/tvadminloginname"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Login :"
+                style="@style/user_logout_textView"
+                android:id="@+id/tvadminlastlogin"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Time :"
+                style="@style/user_logout_textView"
+                android:id="@+id/tvadminlogintime"
+                />
+        </LinearLayout>
+</ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+
+    <!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Logout Menu"
+                android:id="@+id/textView117"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Last login as (Administrator): hh:mm:ss xx/xx/20xx"
+                android:id="@+id/textView118"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ToggleButton
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:textOn="Logs"
+                    android:textOff="Logs"
+                    android:id="@+id/logs"
+                    android:background="@drawable/button_menu_unpressed"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:text="Logout"
+                    android:id="@+id/logout"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:id="@+id/ll_admin_logs"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="You are loged on as Administartor"
+                    android:id="@+id/tv_logs"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Last Login: hh:mm:ss dd/mm/20yy"
+                    android:id="@+id/tv_admin_last_login"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Login time: xx:xx"
+                    android:id="@+id/tv_admin_login_time"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    -->
+

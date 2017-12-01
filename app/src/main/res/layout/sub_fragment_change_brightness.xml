@@ -1,0 +1,129 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SubFragmentBrightness">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brightness_start"/>
+    <com.emtcontrols.cam.widget.CustomSeekBar
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:maxHeight="5dip"
+        android:minHeight="5dip"
+        android:progress="100"
+        android:thumb="@drawable/small_thumb"
+        android:progressDrawable="@drawable/progress_bar_color"
+        android:id="@+id/sb_brightness"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tab_icon_brightness_active"/>
+    </LinearLayout>
+</LinearLayout>
+<!--
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SubFragmentBrightness">
+
+    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvShowUpdateMessageForBrightness"
+                    android:textSize="15dp"
+                    android:text="Brightness updated sucessfully"
+                    android:textColor="@drawable/textview_thin_red"
+                    android:visibility="invisible"
+                    android:paddingRight="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_brightness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Please enter brightness"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+               &lt;!&ndash; <EditText
+                    android:id="@+id/et_brightness"
+                    android:layout_width="200dp"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"/>&ndash;&gt;
+                <com.emtcontrols.cam.widget.CustomSeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/seekbar_bg"
+                    android:id="@+id/sb_brightness"/>
+            </TableRow>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:id="@+id/btn_savebrightness"
+
+                    >
+
+                </Button>
+            </LinearLayout>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>
+-->

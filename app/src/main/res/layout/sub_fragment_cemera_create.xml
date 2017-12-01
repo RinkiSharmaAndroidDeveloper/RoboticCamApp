@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAMERA NAME"
+                style="@style/change_password_label"
+                android:id="@+id/tvcamname"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                style="@style/change_password_edittext"
+                android:gravity="center"
+                android:textColor="@color/RedDark"
+                android:id="@+id/et_camname"
+                android:background="@drawable/create_user_textbox"
+                android:textCursorDrawable="@drawable/black_cursor"
+
+
+                />
+        </TableRow>
+        <TableRow android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_cameraurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_label"
+                android:text="Pan\Tilt"></TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_edittext"
+                android:textColor="@color/RedDark"
+                android:id="@+id/et_camurl"
+                android:background="@drawable/create_user_textbox"
+                android:textCursorDrawable="@drawable/black_cursor"
+
+
+                />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_elevation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_label"
+                android:text="ELEVATION"></TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_edittext"
+                android:id="@+id/et_elevation"
+                android:gravity="center"
+                android:textColor="@color/RedDark"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:background="@drawable/create_user_textbox"
+
+
+                />
+        </TableRow>
+        <TableRow android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tv_predestal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_label"
+                android:text="PREDESTAL"></TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/change_password_edittext"
+                android:id="@+id/et_predestal"
+                android:gravity="center"
+                android:textColor="@color/RedDark"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:background="@drawable/create_user_textbox"
+
+
+                />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:gravity="right">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_camsave"
+                android:textSize="6pt"
+                android:layout_marginRight="20dp"
+                android:text="SAVE"
+                android:background="@drawable/admin_button_save"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_camcancel"
+                android:textSize="6pt"
+                android:text="CANCEL"
+
+                android:background="@drawable/admin_button_save"/>
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

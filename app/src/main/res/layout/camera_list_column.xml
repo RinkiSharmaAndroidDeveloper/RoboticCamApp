@@ -1,0 +1,24 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ToggleButton
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:id="@+id/tb_cameranumber"
+        android:layout_marginTop="5dp"
+        android:textSize="8pt"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/camera_create_user_toggle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_cameraname"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="6pt"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tb_cameranumber"
+        />
+</RelativeLayout>
